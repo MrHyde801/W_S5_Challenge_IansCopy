@@ -8,9 +8,32 @@ async function sprintChallenge5() { // Note the async keyword so you can use `aw
   // 🧠 Use Axios to GET learners and mentors.
   // ❗ Use the variables `mentors` and `learners` to store the data.
   // ❗ Use the await keyword when using axios.
-
+  endPointAxURL = "http://localhost:3003/api/learners";
+  endPointBxURL = 'http://localhost:3003/api/mentors'
   let mentors = [] // fix this
   let learners = [] // fix this
+  
+  async function getLearnersAndMentors() {
+    try {
+      //EndPointA
+      const responseA = await axios.get(endPointAxURL)
+      learners = responseA.data
+      console.log(learners)
+
+      //EndpoindB
+      const responseB = await axios.get(endPointBxURL)
+      mentors = responseB.data
+      console.log(mentors)
+
+    } catch(error) {
+      console.log(`There is something wrong: ${error.message}`)
+    }
+  }
+  
+
+
+
+  getLearnersAndMentors()
 
   // 👆 ==================== TASK 1 END ====================== 👆
 
@@ -28,6 +51,10 @@ async function sprintChallenge5() { // Note the async keyword so you can use `aw
   //     "Grace Hopper"
   //   ]`
   // }
+
+  createLearners() {
+    let learners
+  }
 
   // 👆 ==================== TASK 2 END ====================== 👆
 
