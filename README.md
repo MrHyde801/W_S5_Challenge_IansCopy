@@ -121,7 +121,7 @@ For fetching, just **await** the Axios request to Endpoint A, and then await the
 Once you have the data from Endpoints A and B stored inside variables called `learners` and `mentors`, check that this data matches what you saw in Postman, and then **use your JavaScript skills** to combine the two lists into a single data structure** called `learners` that is comfortable to work with. This data structure **must** look like this:
 
 ```js
-// the variable holding the combined data must be called `learners`
+// the variable holding the combined data must be called `learners`4
 [
   // etc
   {
@@ -136,9 +136,14 @@ Once you have the data from Endpoints A and B stored inside variables called `le
 
 **TASK 3:**
 
-Once you have the data in the right shape, scroll down to TASK 3 and find the `card`, `heading`, `email`, `mentorsHeading`, `mentorsList` elements nice and ready to receive their initial text content and class names. Use **your DOM manipulation skills** to flesh out these DOM elements so that they match exactly what you see in the DOM of the mock site. Use the Elements tab of the browser to check the initial class names of the elements in the mock.
+Once you have the data in the right shape, scroll down to TASK 3 and 
+find the `card`, `heading`, `email`, `mentorsHeading`, `mentorsList` elements nice and ready 
+to receive their initial text content and class names. Use **your DOM manipulation skills** to 
+flesh out these DOM elements so that they match exactly what you see in the DOM of the mock site. 
+Use the Elements tab of the browser to check the initial class names of the elements in the mock.
 
-You will also need to loop over the mentor names, and create an `li` element for each of the mentors, and append it to its parent, the `ul` element. Once this is done correctly, your site should match the mock site exactly!
+You will also need to loop over the mentor names, and create an `li` element for each of the mentors, 
+and append it to its parent, the `ul` element. Once this is done correctly, your site should match the mock site exactly!
 
   ---
 
